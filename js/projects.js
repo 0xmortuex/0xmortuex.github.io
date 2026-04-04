@@ -44,6 +44,16 @@
       source: 'https://github.com/0xmortuex/DebateBot'
     },
     {
+      name: 'GitPulse',
+      desc: 'Enter any GitHub username, get a visual profile card with language breakdown, activity heatmap, and shareable PNG export.',
+      category: 'Dev Tools',
+      tag: 'Dev Tool',
+      tagClass: 'dev',
+      stack: ['JavaScript', 'Chart.js', 'GitHub API'],
+      demo: 'https://0xmortuex.github.io/GitPulse/',
+      source: 'https://github.com/0xmortuex/GitPulse'
+    },
+    {
       name: 'PassCrack',
       desc: 'Simulates real attack techniques to estimate password crack time with pattern detection.',
       category: 'Cybersecurity',
