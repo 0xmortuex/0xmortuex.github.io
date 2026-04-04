@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>0xmortuex — Developer Portfolio</title>
+  <meta name="description" content="Developer portfolio of 0xmortuex — AI-powered tools, cybersecurity projects, and open source work.">
+  <meta name="theme-color" content="#050505">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Outfit:wght@300;400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/sections.css">
+  <link rel="stylesheet" href="css/terminal.css">
+  <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#hero" class="nav__logo"><span class="green">0x</span>mortuex</a>
+      <button class="nav__hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav__links" id="nav-links">
+        <li><a href="#about" class="nav__link" data-section="about">About</a></li>
+        <li><a href="#projects" class="nav__link" data-section="projects">Projects</a></li>
+        <li><a href="#skills" class="nav__link" data-section="skills">Skills</a></li>
+        <li><a href="#contact" class="nav__link" data-section="contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Mobile drawer overlay -->
+  <div class="nav__overlay" id="nav-overlay"></div>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero" id="hero">
+      <div class="hero__bg" id="hero-bg"></div>
+      <div class="hero__content">
+        <h1 class="hero__title" id="hero-title" aria-label="0xmortuex"></h1>
+        <p class="hero__subtitle" id="hero-subtitle">Developer · Security Enthusiast · Builder</p>
+        <div class="hero__socials" id="hero-socials">
+          <a href="https://github.com/0xmortuex" target="_blank" rel="noopener" aria-label="GitHub" class="hero__social-link">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+          </a>
+          <a href="https://discord.com/users/0xmortuex" target="_blank" rel="noopener" aria-label="Discord" class="hero__social-link">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994a.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.095 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.095 2.157 2.42 0 1.333-.947 2.418-2.157 2.418z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="hero__scroll" id="hero-scroll">
+        <span class="hero__scroll-text">scroll</span>
+        <div class="hero__scroll-line">
+          <div class="hero__scroll-dot"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="section" id="about">
+      <div class="container">
+        <h2 class="section__title anim-fade-up"><span class="section__accent"></span>About</h2>
+        <div class="about">
+          <div class="about__text anim-fade-up">
+            <p>9th grader in Istanbul building tools that sit at the intersection of code, security, and law.</p>
+            <p>I build AI-powered developer tools, Discord plugins, and legal-tech applications. My projects have been used by <strong>[X]</strong> users across <strong>[Y]</strong> countries.</p>
+            <p>When I'm not coding, I'm drafting legislation in CUSA, chairing MUN committees, or preparing for Cambridge FCE.</p>
+            <p>I believe in CLI-first workflows, open source, and building things that solve real problems.</p>
+          </div>
+          <div class="about__stats anim-fade-up">
+            <div class="stat">
+              <span class="stat__number" data-target="4">0</span><span class="stat__plus">+</span>
+              <span class="stat__label">AI Apps Built</span>
+            </div>
+            <div class="stat">
+              <span class="stat__number" data-target="5">0</span><span class="stat__plus">+</span>
+              <span class="stat__label">Vencord Plugins</span>
+            </div>
+            <div class="stat">
+              <span class="stat__number" data-target="3">0</span>
+              <span class="stat__label">Languages Spoken</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="section" id="projects">
+      <div class="container">
+        <h2 class="section__title anim-fade-up"><span class="section__accent"></span>Projects</h2>
+        <div class="projects__filters anim-fade-up" id="project-filters"></div>
+        <div class="projects__grid" id="project-grid"></div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="section" id="skills">
+      <div class="container">
+        <h2 class="section__title anim-fade-up"><span class="section__accent"></span>Stack</h2>
+        <div class="skills__groups" id="skills-groups">
+          <div class="skills__group anim-fade-up">
+            <h3 class="skills__group-title">Languages</h3>
+            <div class="skills__grid">
+              <div class="skill-card"><span class="skill-card__name">JavaScript</span><div class="skill-card__bar"><div class="skill-card__fill" data-level="90"></div></div></div>
+              <div class="skill-card"><span class="skill-card__name">TypeScript</span><div class="skill-card__bar"><div class="skill-card__fill" data-level="75"></div></div></div>
+              <div class="skill-card"><span class="skill-card__name">Python</span><div class="skill-card__bar"><div class="skill-card__fill" data-level="80"></div></div></div>
+              <div class="skill-card"><span class="skill-card__name">HTML/CSS</span><div class="skill-card__bar"><div class="skill-card__fill" data-level="95"></div></div></div>
+              <div class="skill-card"><span class="skill-card__name">Lua</span><div class="skill-card__bar"><div class="skill-card__fill" data-level="55"></div></div></div>
+            </div>
+          </div>
+          <div class="skills__group anim-fade-up">
+            <h3 class="skills__group-title">Tools</h3>
+            <div class="skills__grid">
+              <div class="skill-card"><span class="skill-card__name">Git</span><div class="skill-card__bar"><div class="skill-card__fill" data-level="85"></div></div></div>
+              <div class="skill-card"><span class="skill-card__name">Cloudflare Workers</span><div class="skill-card__bar"><div class="skill-card__fill" data-level="80"></div></div></div>
+              <div class="skill-card"><span class="skill-card__name">VS Code</span><div class="skill-card__bar"><div class="skill-card__fill" data-level="90"></div></div></div>
+              <div class="skill-card"><span class="skill-card__name">PowerShell</span><div class="skill-card__bar"><div class="skill-card__fill" data-level="65"></div></div></div>
+            </div>
+          </div>
+          <div class="skills__group anim-fade-up">
+            <h3 class="skills__group-title">APIs & Services</h3>
+            <div class="skills__grid">
+              <div class="skill-card"><span class="skill-card__name">OpenRouter</span><div class="skill-card__bar"><div class="skill-card__fill" data-level="80"></div></div></div>
+              <div class="skill-card"><span class="skill-card__name">Claude API</span><div class="skill-card__bar"><div class="skill-card__fill" data-level="85"></div></div></div>
+              <div class="skill-card"><span class="skill-card__name">GitHub API</span><div class="skill-card__bar"><div class="skill-card__fill" data-level="75"></div></div></div>
+              <div class="skill-card"><span class="skill-card__name">Steam Web</span><div class="skill-card__bar"><div class="skill-card__fill" data-level="60"></div></div></div>
+            </div>
+          </div>
+          <div class="skills__group anim-fade-up">
+            <h3 class="skills__group-title">Concepts</h3>
+            <div class="skills__grid">
+              <div class="skill-card"><span class="skill-card__name">Cybersecurity</span><div class="skill-card__bar"><div class="skill-card__fill" data-level="75"></div></div></div>
+              <div class="skill-card"><span class="skill-card__name">Legislative Drafting</span><div class="skill-card__bar"><div class="skill-card__fill" data-level="70"></div></div></div>
+              <div class="skill-card"><span class="skill-card__name">API Design</span><div class="skill-card__bar"><div class="skill-card__fill" data-level="80"></div></div></div>
+              <div class="skill-card"><span class="skill-card__name">Web Scraping</span><div class="skill-card__bar"><div class="skill-card__fill" data-level="85"></div></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section section--last" id="contact">
+      <div class="container">
+        <h2 class="section__title anim-fade-up"><span class="section__accent"></span>Connect</h2>
+        <div class="contact__cards anim-fade-up">
+          <a href="https://github.com/0xmortuex" target="_blank" rel="noopener" class="contact-card">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+            <span>github.com/0xmortuex</span>
+          </a>
+          <a href="https://discord.com/users/0xmortuex" target="_blank" rel="noopener" class="contact-card">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994a.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.095 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.095 2.157 2.42 0 1.333-.947 2.418-2.157 2.418z"/></svg>
+            <span>0xmortuex</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p class="footer__tagline">Built with vanilla JS. No frameworks were harmed.</p>
+    <p class="footer__copy">&copy; 2026 0xmortuex <button class="footer__terminal-trigger" id="terminal-trigger" aria-label="Open terminal">&#9608;</button></p>
+  </footer>
+
+  <!-- Terminal Easter Egg -->
+  <div class="terminal" id="terminal">
+    <div class="terminal__header">
+      <div class="terminal__dots">
+        <span class="terminal__dot terminal__dot--red"></span>
+        <span class="terminal__dot terminal__dot--yellow"></span>
+        <span class="terminal__dot terminal__dot--green"></span>
+      </div>
+      <span class="terminal__title">0xmortuex@portfolio:~$</span>
+      <div class="terminal__controls">
+        <button class="terminal__minimize" id="terminal-minimize" aria-label="Minimize">&#x2500;</button>
+        <button class="terminal__close" id="terminal-close" aria-label="Close">&times;</button>
+      </div>
+    </div>
+    <div class="terminal__resize-handle" id="terminal-resize"></div>
+    <div class="terminal__body" id="terminal-body">
+      <div class="terminal__output" id="terminal-output"></div>
+      <div class="terminal__input-line">
+        <span class="terminal__prompt">visitor@0xmortuex:~$&nbsp;</span>
+        <input type="text" class="terminal__input" id="terminal-input" autocomplete="off" spellcheck="false" autofocus>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/animations.js"></script>
+  <script src="js/projects.js"></script>
+  <script src="js/terminal.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
