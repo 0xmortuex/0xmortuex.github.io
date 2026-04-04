@@ -2,7 +2,7 @@
 
 My developer portfolio showcasing AI-powered tools, cybersecurity projects, and open source work.
 
-![Screenshot](https://via.placeholder.com/1200x630/050505/00ff88?text=0xmortuex+Portfolio)
+![Screenshot](screenshot.png)
 
 ## Built With
 
