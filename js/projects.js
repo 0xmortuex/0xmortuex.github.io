@@ -4,6 +4,26 @@
 
   var projects = [
     {
+      name: 'TermsTrap',
+      desc: 'Paste any Terms of Service and instantly see what you're actually agreeing to — AI highlights data selling, forced arbitration, and hidden traps.',
+      category: 'AI Tools',
+      tag: 'AI Tool',
+      tagClass: 'ai',
+      stack: ['JavaScript', 'Claude', 'Cloudflare Workers'],
+      demo: 'https://0xmortuex.github.io/TermsTrap/',
+      source: 'https://github.com/0xmortuex/TermsTrap'
+    },
+    {
+      name: 'Roblox Anticheat — The Hard Way',
+      desc: 'Open-source course: build server-side anticheat from scratch. Speed, fly, noclip, aimbot detection with Bayesian analysis. 7 modules.',
+      category: 'Education',
+      tag: 'Course',
+      tagClass: 'cyber',
+      stack: ['Luau', 'Roblox'],
+      demo: '',
+      source: 'https://github.com/0xmortuex/roblox-anticheat-the-hard-way'
+    },
+    {
       name: 'CodeLens',
       desc: 'Paste code, get an instant AI security audit with visual report cards.',
       category: 'AI Tools',
@@ -85,7 +105,7 @@
     }
   ];
 
-  var categories = ['All', 'AI Tools', 'Cybersecurity', 'Dev Tools', 'Plugins'];
+  var categories = ['All', 'AI Tools', 'Education', 'Cybersecurity', 'Dev Tools', 'Plugins'];
   var activeFilter = 'All';
 
   var filtersEl = document.getElementById('project-filters');
