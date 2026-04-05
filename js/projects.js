@@ -5,7 +5,7 @@
   var projects = [
     {
       name: 'TermsTrap',
-      desc: 'Paste any Terms of Service and instantly see what you''re actually agreeing to — AI highlights data selling, forced arbitration, and hidden traps.',
+      desc: 'Paste any Terms of Service and instantly see what you are actually agreeing to — AI highlights data selling, forced arbitration, and hidden traps.',
       category: 'AI Tools',
       tag: 'AI Tool',
       tagClass: 'ai',
