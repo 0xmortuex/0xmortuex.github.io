@@ -4,26 +4,6 @@
 
   var projects = [
     {
-      name: 'TermsTrap',
-      desc: 'Paste any Terms of Service and instantly see what you are actually agreeing to — AI highlights data selling, forced arbitration, and hidden traps.',
-      category: 'AI Tools',
-      tag: 'AI Tool',
-      tagClass: 'ai',
-      stack: ['JavaScript', 'Claude', 'Cloudflare Workers'],
-      demo: 'https://0xmortuex.github.io/TermsTrap/',
-      source: 'https://github.com/0xmortuex/TermsTrap'
-    },
-    {
-      name: 'Roblox Anticheat — The Hard Way',
-      desc: 'Open-source course: build server-side anticheat from scratch. Speed, fly, noclip, aimbot detection with Bayesian analysis. 7 modules.',
-      category: 'Education',
-      tag: 'Course',
-      tagClass: 'cyber',
-      stack: ['Luau', 'Roblox'],
-      demo: '',
-      source: 'https://github.com/0xmortuex/roblox-anticheat-the-hard-way'
-    },
-    {
       name: 'CodeLens',
       desc: 'Paste code, get an instant AI security audit with visual report cards.',
       category: 'AI Tools',
@@ -64,14 +44,54 @@
       source: 'https://github.com/0xmortuex/DebateBot'
     },
     {
+      name: 'TermsTrap',
+      desc: 'Paste any Terms of Service, AI highlights hidden clauses, data selling, and auto-renewals with a risk score.',
+      category: 'AI Tools',
+      tag: 'AI Tool',
+      tagClass: 'ai',
+      stack: ['JavaScript', 'Claude', 'Cloudflare Workers'],
+      demo: 'https://0xmortuex.github.io/TermsTrap/',
+      source: 'https://github.com/0xmortuex/TermsTrap'
+    },
+    {
+      name: 'MiniOS',
+      desc: 'A full desktop OS in the browser \u2014 windows, file system, terminal, paint, music, app store. Zero dependencies.',
+      category: 'Showcase',
+      tag: 'Showcase',
+      tagClass: 'dev',
+      stack: ['Vanilla JS', 'CSS'],
+      demo: 'https://0xmortuex.github.io/MiniOS/',
+      source: 'https://github.com/0xmortuex/MiniOS'
+    },
+    {
+      name: 'ChatRoom',
+      desc: 'Real-time anonymous chat with rooms, message history, sound effects, and markdown formatting.',
+      category: 'Real-time',
+      tag: 'Real-time',
+      tagClass: 'dev',
+      stack: ['JavaScript', 'Cloudflare Workers', 'KV'],
+      demo: 'https://0xmortuex.github.io/ChatRoom/',
+      source: 'https://github.com/0xmortuex/ChatRoom'
+    },
+    {
       name: 'GitPulse',
-      desc: 'Enter any GitHub username, get a visual profile card with language breakdown, activity heatmap, and shareable PNG export.',
-      category: 'Dev Tools',
-      tag: 'Dev Tool',
+      desc: 'Enter any GitHub username, get a visual profile card with language breakdown, activity heatmap, and shareable PNG.',
+      category: 'Data Viz',
+      tag: 'Data Viz',
       tagClass: 'dev',
       stack: ['JavaScript', 'Chart.js', 'GitHub API'],
       demo: 'https://0xmortuex.github.io/GitPulse/',
       source: 'https://github.com/0xmortuex/GitPulse'
+    },
+    {
+      name: 'TypeRush',
+      desc: 'Typing speed game with code mode, multiple languages, WPM tracking, achievements, and leaderboard.',
+      category: 'Game',
+      tag: 'Game',
+      tagClass: 'dev',
+      stack: ['Vanilla JS', 'CSS'],
+      demo: 'https://0xmortuex.github.io/TypeRush/',
+      source: 'https://github.com/0xmortuex/TypeRush'
     },
     {
       name: 'PassCrack',
@@ -86,7 +106,7 @@
     {
       name: 'SteamOgames',
       desc: 'Scrapes and displays a 122-game Steam library dashboard without an API key.',
-      category: 'Dev Tools',
+      category: 'Dev Tool',
       tag: 'Dev Tool',
       tagClass: 'dev',
       stack: ['Python', 'Flask', 'BeautifulSoup'],
@@ -96,7 +116,7 @@
     {
       name: 'Vencord Plugins',
       desc: '5 standalone Discord plugins: InactivityTracker, QuickNotes, ServerClock, RoleMembers, DMOrganizer.',
-      category: 'Plugins',
+      category: 'Plugin',
       tag: 'Plugin',
       tagClass: 'plugin',
       stack: ['TypeScript', 'Vencord API'],
@@ -105,7 +125,7 @@
     }
   ];
 
-  var categories = ['All', 'AI Tools', 'Education', 'Cybersecurity', 'Dev Tools', 'Plugins'];
+  var categories = ['All', 'AI Tools', 'Showcase', 'Real-time', 'Data Viz', 'Game', 'Cybersecurity', 'Dev Tool', 'Plugin'];
   var activeFilter = 'All';
 
   var filtersEl = document.getElementById('project-filters');
