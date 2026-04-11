@@ -1,0 +1,114 @@
+/* ===== Theme Variables ===== */
+:root {
+  /* Dark theme (default) */
+  --os-bg: #0a0c10;
+  --os-surface: #12141a;
+  --os-card: #1a1e28;
+  --os-taskbar: #0d0f14;
+  --os-accent: #6366f1;
+  --os-accent-hover: #818cf8;
+  --os-green: #22c55e;
+  --os-red: #ef4444;
+  --os-yellow: #eab308;
+  --os-text: #e2e8f0;
+  --os-text-muted: #64748b;
+  --os-border: #1e293b;
+  --os-window-bg: #13161d;
+  --os-titlebar: #1a1e28;
+  --os-shadow: 0 8px 32px rgba(0,0,0,0.5);
+  --os-shadow-sm: 0 2px 8px rgba(0,0,0,0.3);
+  --font-display: 'Syne', sans-serif;
+  --font-body: 'Outfit', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+}
+
+[data-theme="light"] {
+  --os-bg: #e8ecf0;
+  --os-surface: #f1f5f9;
+  --os-card: #ffffff;
+  --os-taskbar: #f8fafc;
+  --os-accent: #6366f1;
+  --os-accent-hover: #4f46e5;
+  --os-text: #1e293b;
+  --os-text-muted: #64748b;
+  --os-border: #cbd5e1;
+  --os-window-bg: #ffffff;
+  --os-titlebar: #f1f5f9;
+  --os-shadow: 0 8px 32px rgba(0,0,0,0.12);
+  --os-shadow-sm: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+/* ===== Base Reset ===== */
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  font-family: var(--font-body);
+  background: var(--os-bg);
+  color: var(--os-text);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  user-select: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  background: none;
+  border: none;
+  color: inherit;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+input, textarea {
+  font-family: inherit;
+  color: inherit;
+}
+
+::selection {
+  background: var(--os-accent);
+  color: white;
+}
+
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--os-border); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: var(--os-text-muted); }
+
+/* Wallpaper options */
+.wallpaper-grid {
+  background-image:
+    linear-gradient(rgba(99,102,241,0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(99,102,241,0.03) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+.wallpaper-gradient {
+  background: linear-gradient(135deg, #0a0c10 0%, #1a1033 40%, #0f0a1e 70%, #0a0c10 100%);
+}
+
+.wallpaper-solid {
+  background: #0a0c10;
+}
+
+.wallpaper-matrix {
+  background: #050505;
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
